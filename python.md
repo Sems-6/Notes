@@ -1,4 +1,4 @@
- ## loop control statement
+## loop control statement
  ----------
 
 - do while
@@ -7,7 +7,7 @@
     - Continue
     - Pass
 
-## Break
+### Break
 ----------
 - used to change or alter the flow of execution
 - the looping statement iterate till the text expression true
