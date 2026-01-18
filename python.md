@@ -18,7 +18,7 @@
     - Break
 
 ```python
-for val in "welcome"
+for val in "welcome":
     if val == 'c':
         break
         print(wel)
