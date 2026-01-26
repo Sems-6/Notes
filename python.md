@@ -13,6 +13,7 @@
 - the looping statement iterate till the text expression true
 - the current iteration of the loop need to be terminated
 - the break statement used in this case
+- [ x ]
 
 - syntax
     - Break
