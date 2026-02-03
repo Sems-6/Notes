@@ -1,6 +1,6 @@
 ## 10 marks
 ----------
-### Software requriement specification characteristics of SRS
+### Software requirement specification characteristics of SRS
 ----------
 - 1.correctness
 - 2.completeness -> functionality performance design attributes
@@ -14,3 +14,15 @@
 - 10.testability
 - 11.understandable by customs
 - 12.right level of abstraction
+
+### Cohesim and types
+----------
+degree of which elements of module are functionally dependent
+
+- function
+- sequence
+- communication
+- procedural
+- temporal
+
+
