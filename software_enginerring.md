@@ -26,3 +26,87 @@ degree of which elements of module are functionally dependent
 - temporal
 
 
+####
+
+- it consist of set of function code algorithm and logic to perform the task
+- Data
+    - Variable and data structure the module operate on
+- Interface
+    - it define method that interacting with other modules
+
+----------
+### Key characteristics of module
+
+- Encapsulation
+    - a module hides the implementation details exposing only necessary through well defined
+    that is called Encapsulation
+- Reusability
+    - a module across multi project or system
+- Independence
+    - module can be design to minimize the dependencies on other modules making them
+    easier to update
+- High cohesion
+    - Each module can focus on single task or closely related task
+- Low coupling
+    - Module should have minimal dependencies to reduce impact of changes in one module
+
+#### Benefit of modularisation
+
+- Improve maintainability easy to locate.
+- easier to locate and fix the bug.
+- enhance the reusability.
+- module can be reused to scalability.
+- new feature can be added by integrating without affecting the existing one.
+- reduce complexity.
+- breaking down the system into smaller part simplify the design.
+
+### Data coupling
+----------
+- is based on the fact that the communicate by passing only data . Then module are set to be
+    data couple
+- Components are Independent
+ - Eg - customer willing
+- the complete data struct is passed from to another one
+- it involve trapped data and it was made by designer
+
+### control coupling
+----------
+- module can communicate by passing control communicate
+- Ex:
+    - short function that takes comparison function as an short argurment
+
+
+### External coupling
+----------
+- the module depend on other coupling to a particular type of hardware
+- Eg :
+    - Protocol design for
+
+### common coupling
+----------
+- such as global data structure the changes in global data tracking back to all modules
+    which access the data to evaluate the affect of changes
+- it reduce ability to control data access and reduce
+
+###
+----------
+- one module can modify the data of another module are control is passed form one module to
+    another module
+- This is the worst form of coupling
+
+### Sequential coupling
+----------
+- it occur when output of one module depend of another module
+- this type of coupling can be diff to maintain and modify
+
+### functionally coupling
+----------
+- functionally coupling occur when two module depend on each other functionality.
+- tightly couped and diff to maintain
+
+### Component coupling
+----------
+- interaction between the two classes where the class has variable of another class
+- where is Component coupling there will be interaction coupling
+
+
