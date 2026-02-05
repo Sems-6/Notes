@@ -1,5 +1,0 @@
-
-E5108: Error executing lua: /home/hellopradeep/.config/nvim/lua/config/args.lua:58: Invalid buffer id: 41
-stack traceback:
-        [C]: in function 'nvim_buf_delete'
-        /home/hellopradeep/.config/nvim/lua/config/args.lua:58: in function </home/hellopradeep/.config/nvim/lua/config/args.lua:56>
