@@ -109,4 +109,58 @@ degree of which elements of module are functionally dependent
 - interaction between the two classes where the class has variable of another class
 - where is Component coupling there will be interaction coupling
 
+### External design
+----------
+- conceiving planning and specification characteristics of model
+- external design consent with refining the requirement and establishing high level of
+    structure view
+- it include user display
+- format and external device
+
+### architectural design
+----------
+- consist with conceptual design of the structure
+- Identify internal processing function
+- decomposing high level function
+- establishing the relationship among the function , data stream and data store
+
+### Detailed design
+----------
+- Include of specs of algorithm
+- Implement the function
+- concrete data structure that Implement data store
+- the actual interconnection among the store
+<!-- TODO: -->
+### External design [[software_enginerring#External design]]
+----------
+1. SRR -> software requirement review
+2. PDR -> preliminary design review
+3. CDR -> Critical design review
+
+### three level of abstraction
+----------
+1. functional abstraction
+2. Data abstraction - involve specs of data type/object
+    - eg : Stack
+3. Control abstraction - used to design affect w/o stating exact mechanism of control
+
+### Structure
+----------
+- fundamental of something i forgot to note
+- more manageable unit
+- with well define relationship
+
+### Information riding
+----------
+- function at design concept
+- the design should begin with a list of ..
+- used as a principle design for architectural design of the system.
+
+### Concurrency
+----------
+- Independent process can be activated simultaneously if multi pro
+- on a single processor , it can be interleaved execution time
+- necessary for se to concurrent software design
+- the study of the aesthetic is a combination of design functionality.
+- Visual and emotional connection and user communication
 
