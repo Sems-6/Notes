@@ -55,3 +55,13 @@ print(res)
     5. re.sub()
     6. re.compile()
 
+- Rematch function attempt to match re pattern a string with optional flag
+
+- syntax
+```python
+re.match(pattern,string,flag==0)
+```
+
+- When pattern is the regular expression to be matched
+- String to be charged as the beginning of the
+- flag operate using the bitwise flag

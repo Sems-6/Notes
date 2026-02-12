@@ -164,3 +164,20 @@ degree of which elements of module are functionally dependent
 - the study of the aesthetic is a combination of design functionality.
 - Visual and emotional connection and user communication
 
+### DFD
+- In this level entire s/m is represented babble with input and output indicated bu in coming & out going arrows.
+- each process in level 1 represent the sub fns of every process represents the basic functionalities.
+  the leves are increased each bubble gets define.
+  eg:
+   external entery: |==|
+   process: 0
+   store:==
+   flow: ->
+
+- Level 0 DFD:
+ railway eservation
+    ~ passenger
+        ~train schodloing
+            ~reservation
+
+
