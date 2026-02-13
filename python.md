@@ -65,3 +65,10 @@ re.match(pattern,string,flag==0)
 - When pattern is the regular expression to be matched
 - String to be charged as the beginning of the
 - flag operate using the bitwise flag
+
+- eg:
+```python
+import re
+res = re.match('r','W','welcome havie a nice day')
+print(res)
+```
