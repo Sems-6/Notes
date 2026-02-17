@@ -1,0 +1,235 @@
+
+MariaDB [(none)]> create database csus23457;
+Query OK, 1 row affected (0.001 sec)
+
+MariaDB [(none)]> use csus23457;
+Database changed
+MariaDB [csus23457]> create table employees (emp_id int , emp_name varchar(20),salary int,age int,dept varchar(20));
+Query OK, 0 rows affected (0.030 sec)
+
+MariaDB [csus23457]> describe employees;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| emp_id   | int(11)     | YES  |     | NULL    |       |
+| emp_name | varchar(20) | YES  |     | NULL    |       |
+| salary   | int(11)     | YES  |     | NULL    |       |
+| age      | int(11)     | YES  |     | NULL    |       |
+| dept     | varchar(20) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+5 rows in set (0.002 sec)
+
+MariaDB [csus23457]> insert into employees ( emp_id, emp_name, salary, age, dept) values (1,vicky,500000,30,sales) ;
+MariaDB [csus23457]> insert into employees ( emp_id, emp_name, salary, age, dept) values (,"1","vicky","500000","30","sales");
+MariaDB [csus23457]> insert into employees ( emp_id, emp_name, salary, age, dept) values ("1","vicky","500000","30","sales");
+Query OK, 1 row affected (0.071 sec)
+
+MariaDB [csus23457]> select * from employees;
++--------+----------+--------+------+-------+
+| emp_id | emp_name | salary | age  | dept  |
++--------+----------+--------+------+-------+
+|      1 | vicky    | 500000 |   30 | sales |
++--------+----------+--------+------+-------+
+1 row in set (0.001 sec)
+
+MariaDB [csus23457]> insert into employees ( emp_id, emp_name, salary, age, dept) values
+    -> ("2","Real","50000","35","marketing")
+    -> ("3","ram","60000","28","sales")
+    -> ("4","amar","45000","40","sales")
+    -> ("5","pradeep","70000","32","sales")
+    -> ("6","arjun","55000","45","finance");
+("4","amar","45000","40","sales")
+("5","prad...' at line 3
+MariaDB [csus23457]> insert into employees ( emp_id, emp_name, salary, age, dept) values
+    -> ("2","Real","50000","35","marketing"),
+    -> ("3","ram","60000","28","sales"),
+    -> ("4","amar","45000","40","sales"),
+    -> ("5","pradeep","70000","32","sales"),
+    -> ("6","arjun","55000","45","finance");
+Query OK, 5 rows affected (0.075 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+MariaDB [csus23457]> ls
+    -> describe employee;
+describe employee' at line 1
+MariaDB [csus23457]> ls describe employees;
+MariaDB [csus23457]> describe employees;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| emp_id   | int(11)     | YES  |     | NULL    |       |
+| emp_name | varchar(20) | YES  |     | NULL    |       |
+| salary   | int(11)     | YES  |     | NULL    |       |
+| age      | int(11)     | YES  |     | NULL    |       |
+| dept     | varchar(20) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+5 rows in set (0.002 sec)
+
+MariaDB [csus23457]> select * from employees;
++--------+----------+--------+------+-----------+
+| emp_id | emp_name | salary | age  | dept      |
++--------+----------+--------+------+-----------+
+|      1 | vicky    | 500000 |   30 | sales     |
+|      2 | Real     |  50000 |   35 | marketing |
+|      3 | ram      |  60000 |   28 | sales     |
+|      4 | amar     |  45000 |   40 | sales     |
+|      5 | pradeep  |  70000 |   32 | sales     |
+|      6 | arjun    |  55000 |   45 | finance   |
++--------+----------+--------+------+-----------+
+6 rows in set (0.001 sec)
+
+MariaDB [csus23457]>
+MariaDB [csus23457]>
+MariaDB [csus23457]>
+MariaDB [csus23457]>
+MariaDB [csus23457]>
+MariaDB [csus23457]> select emp_name , ceil(salary/10000) as salary_ceiling employees;
+MariaDB [csus23457]> select emp_name , ceil(salary/10000) as salary_ceiling from employees;
++----------+----------------+
+| emp_name | salary_ceiling |
++----------+----------------+
+| vicky    |             50 |
+| Real     |              5 |
+| ram      |              6 |
+| amar     |              5 |
+| pradeep  |              7 |
+| arjun    |              6 |
++----------+----------------+
+6 rows in set (0.001 sec)
+
+MariaDB [csus23457]> select emp_name , ceil(salary/10000) as salary_ceiling from employees;
++----------+----------------+
+| emp_name | salary_ceiling |
++----------+----------------+
+| vicky    |             50 |
+| Real     |              5 |
+| ram      |              6 |
+| amar     |              5 |
+| pradeep  |              7 |
+| arjun    |              6 |
++----------+----------------+
+6 rows in set (0.001 sec)
+
+MariaDB [csus23457]> select * from employees
+    -> ;
++--------+----------+--------+------+-----------+
+| emp_id | emp_name | salary | age  | dept      |
++--------+----------+--------+------+-----------+
+|      1 | vicky    | 500000 |   30 | sales     |
+|      2 | Real     |  50000 |   35 | marketing |
+|      3 | ram      |  60000 |   28 | sales     |
+|      4 | amar     |  45000 |   40 | sales     |
+|      5 | pradeep  |  70000 |   32 | sales     |
+|      6 | arjun    |  55000 |   45 | finance   |
++--------+----------+--------+------+-----------+
+6 rows in set (0.001 sec)
+
+MariaDB [csus23457]> select emp_name , floor(salary/10000) as salary_floor from employees;
++----------+--------------+
+| emp_name | salary_floor |
++----------+--------------+
+| vicky    |           50 |
+| Real     |            5 |
+| ram      |            6 |
+| amar     |            4 |
+| pradeep  |            7 |
+| arjun    |            5 |
++----------+--------------+
+6 rows in set (0.001 sec)
+
+MariaDB [csus23457]> select round(4.4567)
+    -> ;
++---------------+
+| round(4.4567) |
++---------------+
+|             4 |
++---------------+
+1 row in set (0.000 sec)
+
+MariaDB [csus23457]> select round(4.4567) as hiih;
++------+
+| hiih |
++------+
+|    4 |
++------+
+1 row in set (0.001 sec)
+
+MariaDB [csus23457]> select power(20,2);
++-------------+
+| power(20,2) |
++-------------+
+|         400 |
++-------------+
+1 row in set (0.000 sec)
+
+MariaDB [csus23457]> select power(20,3);
++-------------+
+| power(20,3) |
++-------------+
+|        8000 |
++-------------+
+1 row in set (0.001 sec)
+
+MariaDB [csus23457]> select sort(16);
+MariaDB [csus23457]> select sqrt(16);
++----------+
+| sqrt(16) |
++----------+
+|        4 |
++----------+
+1 row in set (0.001 sec)
+
+MariaDB [csus23457]> select pi(123);
+MariaDB [csus23457]> select pi();
++----------+
+| pi()     |
++----------+
+| 3.141593 |
++----------+
+1 row in set (0.000 sec)
+
+MariaDB [csus23457]> select mod(20/2)
+    -> ;
+MariaDB [csus23457]> select mod(21/2)
+    -> ;
+MariaDB [csus23457]> select mod(20,2);
++-----------+
+| mod(20,2) |
++-----------+
+|         0 |
++-----------+
+1 row in set (0.000 sec)
+
+MariaDB [csus23457]> select rand();
++---------------------+
+| rand()              |
++---------------------+
+| 0.25934489840580605 |
++---------------------+
+1 row in set (0.001 sec)
+
+MariaDB [csus23457]> select rand();
++--------------------+
+| rand()             |
++--------------------+
+| 0.3200274932384747 |
++--------------------+
+1 row in set (0.000 sec)
+
+MariaDB [csus23457]> select (10);
++----+
+| 10 |
++----+
+| 10 |
++----+
+1 row in set (0.001 sec)
+
+MariaDB [csus23457]> select log(10);
++-------------------+
+| log(10)           |
++-------------------+
+| 2.302585092994046 |
++-------------------+
+1 row in set (0.001 sec)
+
+MariaDB [csus23457]>
