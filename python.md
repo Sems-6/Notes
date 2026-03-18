@@ -72,3 +72,23 @@ import re
 res = re.match('r','W','welcome havie a nice day')
 print(res)
 ```
+
+- re.search()
+----------
+- syntax
+```python
+(pattern.string.flag)
+```
+- example
+
+```python
+import re
+res= re.search('you',happy birthday to you,god bless you)
+print(res.group())
+```
+
+### re.findall
+
+- suppose if not match anything empty list [ ] display
+
+
